@@ -1,0 +1,86 @@
+@media (max-width: 880px){
+    .tbl-header{
+        display: none;
+    }
+
+    table.delivery thead {
+        display: none;
+    }
+    table.delivery tr {
+        display: block;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #e8e9eb;
+    }
+    table.delivery td {
+        display: block;
+        text-align: right;
+    }
+    table.delivery td:before {
+        content: attr(aria-label);
+        float: left;
+        font-weight: bold;
+    }
+
+    .edit_del_btn button {
+        width: 150px;
+        cursor: pointer;
+    }
+
+    .save_btn_block {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .save_btn_block button {
+        width: 150px;
+    }
+
+    section {
+        margin: 30px 10px;
+    }
+
+    .pop_up_del_btn-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background: white;
+        width: 90%;
+        height: 250px;
+        border-radius: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    .del_block_buttons {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .pop_up form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background: white;
+        width: 90%;
+        height: 500px;
+        border-radius: 20px;
+        position: relative;
+        transition: .2s;
+        max-width: 400px;
+    }
+
+    .pop_up_edit_off-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background: white;
+        width: 90%;
+        height: 250px;
+        border-radius: 20px;
+        position: relative;
+    }
+}
