@@ -22,6 +22,8 @@ $.fn.setCursorPosition = function(pos) {
 };
 
 function set_data_rows (){
+  let not_data = ' <tr> <td></td>  <td style="text-align: center;"> <span>Ничего нет :(</span> </td> <td>    <div class="button" style="display: none;" id="edit_del_btn">      <button class="button_table" id="del_btn">Удалить</button>      <button class="button_table" id="edit_btn">Редактировать</button>    </div>    <div id="save_btn_block" style="display: none;">      <button class="button_table" id="save_vtn">Сохранить</button>    </div>  </td></tr>'; 
+
   $.ajax({
     url: './select_data_rows.php',
     method: 'post',
@@ -32,6 +34,8 @@ function set_data_rows (){
         $(".phone_input").click(function(){
           $(this).setCursorPosition(3);
         }).mask("8 (999) 999 99-99");
+      }else{
+        $('#tBody_list').html(not_data);
       }
     }
   });
