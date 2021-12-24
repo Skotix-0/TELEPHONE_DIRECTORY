@@ -9,7 +9,7 @@
   ->PHP;<br>
   ->MySQL.<br>
   <br>
-  Web сервер Apache/Nginx;<br>
+  Web сервер -> Apache/Nginx;<br>
   Версия PHP -> 7.4.16;<br>
   Версия MySQL -> 5.7.24.<br>
   
